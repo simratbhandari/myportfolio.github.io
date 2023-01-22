@@ -1,0 +1,310 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+}
+
+.header {
+  background-image: url("../images/bgimg.png");
+  background-size: cover;
+  height: 100vh;
+}
+.header .navbar .navbar-nav {
+  margin-left: auto;
+  width: 100%;
+  justify-content: end;
+}
+.header .navbar .nav-item {
+  margin: 2%;
+}
+.header .navbar .nav-link {
+  color: white;
+  font-size: 1.4rem;
+}
+.header .headerContent {
+  padding: 8% 2%;
+  color: white;
+}
+.header .headerContent h1 {
+  font-size: 4.5rem;
+  margin-bottom: 5%;
+}
+.header .headerContent .contactBtn {
+  background-color: white;
+  font-size: larger;
+  margin-top: 4%;
+  padding: 2% 3%;
+}
+
+.mainHeading {
+  text-align: center;
+  color: white;
+  background-color: #0a66c2;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin: auto;
+  padding: 1%;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  margin-bottom: 2%;
+}
+
+.section {
+  margin: 14% 0;
+}
+
+.aboutme {
+  padding: 2%;
+}
+.aboutme .textSide {
+  padding-left: 4%;
+}
+.aboutme .textSide h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.aboutme .textSide p {
+  font-size: 1.3rem;
+  line-height: 2;
+}
+.aboutme .textSide .getIn {
+  background-color: #0a66c2;
+  font-size: 1.4rem;
+  color: white;
+}
+.aboutme .imgSide {
+  display: flex;
+  justify-content: center;
+}
+.aboutme .imgSide img {
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+.skills {
+  text-align: center;
+  padding: 0 15%;
+}
+.skills p {
+  font-size: larger;
+}
+.skills img {
+  width: 100%;
+}
+.skills .skill {
+  margin: 3% 0;
+  display: flex;
+  width: 100%;
+  text-align: justify;
+}
+.skills .skill .progress {
+  width: 100%;
+}
+
+.experience {
+  /* The actual timeline (the vertical ruler) */
+  /* The actual timeline (the vertical ruler) */
+  /* Container around content */
+  /* The circles on the timeline */
+  /* Place the container to the left */
+  /* Place the container to the right */
+  /* Add arrows to the left container (pointing right) */
+  /* Add arrows to the right container (pointing left) */
+  /* Fix the circle for containers on the right side */
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+}
+.experience .experienceCard p {
+  text-align: justify;
+}
+.experience .experienceCard ul li {
+  margin-bottom: 2%;
+}
+.experience .main-timeline {
+  position: relative;
+}
+.experience .main-timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #939597;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.experience .timeline {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.experience .timeline::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #939597;
+  border: 5px solid #f5df4d;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.experience .left {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+.experience .right {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+.experience .left::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+.experience .right::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+.experience .right::after {
+  left: -12px;
+}
+@media screen and (max-width: 600px) {
+  .experience {
+    /* Place the timelime to the left */
+    /* Full-width containers */
+    /* Make sure that all arrows are pointing leftwards */
+    /* Make sure all circles are at the same spot */
+    /* Make all right containers behave like the left ones */
+  }
+  .experience .main-timeline::after {
+    left: 31px;
+  }
+  .experience .timeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .experience .timeline::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  .experience .left::after,
+.experience .right::after {
+    left: 18px;
+  }
+  .experience .left::before {
+    right: auto;
+  }
+  .experience .right {
+    left: 0%;
+  }
+}
+
+.education img {
+  width: 90%;
+}
+.education .educationText {
+  padding: 4% 4%;
+}
+.education .educationText ul {
+  list-style: none;
+}
+.education .educationText .edlist {
+  border: 5px solid #0a66c2;
+  padding: 2%;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+.education .educationText .ed {
+  display: flex;
+  justify-content: space-between;
+}
+.education .educationText .next {
+  margin-top: 5%;
+}
+
+.contact {
+  border: 6px solid #0a66c2;
+  margin: 4%;
+  padding: 3%;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+.contact img {
+  width: 100%;
+}
+.contact .contactText {
+  padding-left: 3%;
+  padding-top: 5%;
+}
+.contact .contactText .getInHeading {
+  color: white;
+  background-color: #0a66c2;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  padding: 1%;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  margin-bottom: 2%;
+  margin-bottom: 8%;
+}
+.contact .contactText .contactInfo {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+}
+.contact .contactText .contactInfo svg {
+  margin-right: 3%;
+  color: #0a66c2;
+}
+.contact .contactText .contactInfo h6 {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1px) and (max-width: 880px) {
+  .navbar-toggler {
+    background-color: white !important;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    color: #0a66c2 !important;
+    margin-top: 17%;
+  }
+}/*# sourceMappingURL=style.css.map */
